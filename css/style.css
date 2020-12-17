@@ -6,6 +6,8 @@ body {
 
 .container {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .main-header {
@@ -14,6 +16,8 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     position: fixed;
+    top:0;
+    left:0;
     width: 33.33%;
     background-image: url("../img/bg.jpg");
     background-size: cover;
@@ -76,15 +80,40 @@ body {
 }
 
 .main-content {
-    width: 63, 33%;
-    margin-left: 34%;
-    padding: 30px;
+    width: 66.66%;
+    padding: 120px 50px;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 .main-content h2 {
-    padding-bottom: 15px;
+    margin: 25px 0;
+    font-size: 23px;
 }
 
 .main-content p {
     line-height: 25px;
+}
+
+.button {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main-content-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content-group-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:25px 0;
+    flex-wrap: wrap;
+}
+
+.main-content-card img{
+    margin: 10px 0;
+    border-radius: 10px;
+    width: 100%;
 }
